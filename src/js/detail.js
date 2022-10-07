@@ -8,7 +8,6 @@ const getPokemon =  async() => {
         const response = await fetch(API);
         const data = await response.json()
         const results = data;
-        console.log(results.flavor_text_entries)
          section.innerHTML +=`
             <ul>
             <p>id : ${results.id}</p>
