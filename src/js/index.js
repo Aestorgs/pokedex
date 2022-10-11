@@ -2,13 +2,13 @@ const section = document.querySelector('section.pokemon');
 
 const API = "https://pokeapi.co/api/v2/pokemon/?offset=0&limit=10";
 
-
 const getPokemon =  async() => {
     try{
-        const response = await fetch(API);
-        const data = await response.json()
-        const results = data.results;
-        results.forEach((pokemon) => {
+        const fetchReq = fetch(API).then((response) => response.json());
+        const data = Promise.all([fetchReq]); 
+        const result =  await data;
+        const element = result[0].results;
+        element.forEach((pokemon)=>{
             let url = "./detail.html";
             if(pokemon.name === "bulbasaur"){
                  url = true;
@@ -21,10 +21,11 @@ const getPokemon =  async() => {
             </ol>      
             `
         });
-    }catch (err){
-        console.log(err);
     }
-}
+    catch (err){
+        console.log(err);
+    };
+};
 getPokemon();
 
 

@@ -2,9 +2,9 @@ const section = document.querySelector('section.detail');
 
 const API = "https://pokeapi.co/api/v2/pokemon-species/1/";
 
-const API2 ="https://pokeapi.co/api/v2/pokemon/1/"
+const API2 ="https://pokeapi.co/api/v2/pokemon/1/";
 
-const getPokemon =  async() => {
+const getDetail =  async() => {
     try{
         const fetchReq1 = fetch(API).then((response) => response.json());
         const fetchReq2 = fetch(API2).then((response) => response.json());
@@ -12,7 +12,7 @@ const getPokemon =  async() => {
         await data.then((results) => 
          section.innerHTML +=`
             <ul>
-            <img src="${results[1].sprites.front_default}" alt="">
+            <img src="${results[1].sprites.front_default}" alt="image the bulbasaur">
             <p>id : ${results[0].id}</p>
             <p> Name : ${results[0].name}</p>
             <p>Capture_rate : ${results[0].capture_rate}</p>
@@ -30,10 +30,10 @@ const getPokemon =  async() => {
             </p>
             </ul>   
             `
-        )
+        );
     }
     catch (err){
         console.log(err);
-    }
-}
-getPokemon();
+    };
+};
+getDetail();
