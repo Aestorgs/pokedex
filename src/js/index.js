@@ -13,7 +13,7 @@ const getPokemon =  async() => {
             if(pokemon.name === "bulbasaur"){
                  url = true;
             }else{
-                 url= false
+                 url= false;
             }
             section.innerHTML +=`
             <ol class="list-group list-group">
