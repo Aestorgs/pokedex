@@ -8,7 +8,7 @@ $ npm install
 ```
 
 ```bash
-# Instalation 
+# Docker
 # turn on docker and start the containers with this command
 $ docker-compose -up -d 
 ```
