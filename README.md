@@ -4,6 +4,11 @@
 
 ```bash
 # Instalation 
+$ npm install 
+```
+
+```bash
+# Instalation 
 # turn on docker and start the containers with this command
 $ docker-compose -up -d 
 ```
