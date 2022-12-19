@@ -1,9 +1,11 @@
+//selection de la class detail
 const section = document.querySelector('section.detail');
-
+// utilisation de l'api 
 const API = "https://pokeapi.co/api/v2/pokemon-species/1/";
-
+// utilisation de l'api 
 const API2 ="https://pokeapi.co/api/v2/pokemon/1/";
 
+// afficher un pokemon 
 const getDetail =  async() => {
     try{
         const fetchReq1 = fetch(API).then((response) => response.json());
