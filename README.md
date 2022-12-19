@@ -1,5 +1,16 @@
-# pokedex
+# Pokedex
 
+Contexte: but du projet : crée un pokedex
+
+Fonctionnalités attendues : rechercher un pokemon et afficher un pokemon 
+
+Durée : 1 jours ,
+
+Taches réalisées : Aestorgs ,
+
+Technos utilisées : Javascripts ,
+
+Outils et ressources :  MDN 
 
 
 ```bash
