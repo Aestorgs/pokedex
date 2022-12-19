@@ -1,7 +1,11 @@
+//selection de la class pokemon 
 const section = document.querySelector('section.pokemon');
 
+// utilisation de l'api 
 const API = "https://pokeapi.co/api/v2/pokemon/?offset=0&limit=10";
 
+
+// afficher la liste des pokemons 
 const getPokemon =  async() => {
     try{
         const fetchReq = fetch(API).then((response) => response.json());
