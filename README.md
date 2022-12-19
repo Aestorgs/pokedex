@@ -8,7 +8,7 @@ Durée : 1 jours ,
 
 Taches réalisées : Aestorgs ,
 
-Technos utilisées : Javascripts ,
+Technos utilisées : Javascripts Docker ,
 
 Outils et ressources :  MDN 
 
