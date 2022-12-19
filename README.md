@@ -2,7 +2,7 @@
 
 Contexte: but du projet : crée un pokedex
 
-Fonctionnalités attendues : rechercher un pokemon et afficher un pokemon 
+Fonctionnalités attendues : afficher la liste de pokemon  afficher un pokemon 
 
 Durée : 1 jours ,
 
